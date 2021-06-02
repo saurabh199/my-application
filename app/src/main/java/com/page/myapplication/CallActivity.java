@@ -11,6 +11,7 @@ public class CallActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        System.out.println("Hello World");
         Intent myIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "9599525679"));;
         startActivity(myIntent);
     }
